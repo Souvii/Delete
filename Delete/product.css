@@ -1,0 +1,69 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: blue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.product{
+    position: relative;
+    width: 20%;
+    height: 40vh;
+    background: red;
+}
+.pr-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: full;
+    height: 33vh;
+    background: #000;
+}
+.pr-name{
+    width: full;
+    height: 5vh;
+    margin-top: 2vh;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p-upper{
+    width: 100%;
+    height: 40vh;
+    background: white;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.p-upper h1{
+    font-size: 1.6vw;
+    
+}
+.p-upper p{
+    width: 80%;
+    text-align: justify;
+    font-size: 1.1vw;
+    margin-left: 10%;
+}
+.product:hover .p-upper{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
